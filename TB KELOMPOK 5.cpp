@@ -203,18 +203,18 @@ void drawCartesianLines() {
 
 	glBegin(GL_LINES);
 
-	// Horizontal line (X-axis)
-	glColor3f(1.0f, 0.0f, 0.0f); // Red for X-axis
+	// Horizontal line (Y-axis)
+	glColor3f(0.0f, 1.0f, 0.0f); // Green for Y-axis
 	glVertex3f(-600.0f, 0.0f, 0.0f); // Far left
 	glVertex3f(600.0f, 0.0f, 0.0f);  // Far right
 
-	// Vertical line (Y-axis)
+	// Vertical line (Z-axis)
 	glColor3f(0.0f, 0.0f, 1.0f); // Blue for Z-axis
 	glVertex3f(0.0f, -600.0f, 0.0f); // Bottom
 	glVertex3f(0.0f, 600.0f, 0.0f);  // Top
 
-	// Optional: Depth line (Z-axis
-	glColor3f(0.0f, 1.0f, 0.0f); // Green for Y-axis
+	// Horizontal line (X-axis)
+	glColor3f(1.0f, 0.0f, 0.0f); // Red for X-axis
 	glVertex3f(0.0f, 0.0f, -600.0f); // Back
 	glVertex3f(0.0f, 0.0f, 600.0f);  // Front
 
